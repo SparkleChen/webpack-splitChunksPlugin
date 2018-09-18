@@ -1,0 +1,29 @@
+{
+  "name": "webpack-splitchunksplugin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SparkleChen/webpack-splitChunksPlugin.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SparkleChen/webpack-splitChunksPlugin/issues"
+  },
+  "homepage": "https://github.com/SparkleChen/webpack-splitChunksPlugin#readme",
+  "dependencies": {
+    "import-local": "^2.0.0",
+    "loadsh": "0.0.2",
+    "webpack": "^4.19.1",
+    "webpack-cli": "^3.1.0"
+  },
+  "devDependencies": {
+    "clean-webpack-plugin": "^0.1.19"
+  }
+}
