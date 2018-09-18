@@ -1,13 +1,10 @@
-import classB from './classes/class-b';
+import classA from './classes/class-a';
 import classC from './classes/class-c';
 
 let engligh = {
     teacher: 'english', age: 47
 };
 
-import( /* webpackChunkName: "async-class-a" */  './classes/class-a').then(classA =>{
-    classA.push(engligh);
-});
 
-classB.push(engligh);
+classA.push(engligh);
 classC.push(engligh);

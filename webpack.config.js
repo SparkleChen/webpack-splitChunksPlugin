@@ -17,9 +17,12 @@ module.exports = {
     optimization: {
         minimize: false,
         splitChunks: {
-            chunks: "initial",  // async输出动态加载的重复文件、 initial动态和非动态的重复文件各输出一份 、 all不管动态还是非动态的重复文件只输出一份
+            chunks: 'all',
+            maxInitialRequests: 3,
             minSize: 0,
             automaticNameDelimiter: '~',
         }
     },
 };
+//maxInitialRequests
+//入口点处的最大并行请求数，换句话来讲就是每一个入口文件打包完成后最多能有多少个模块组成
